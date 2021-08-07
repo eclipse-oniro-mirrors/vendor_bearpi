@@ -1,36 +1,37 @@
-# vendor_bearpi
+# vendor/bearpi<a name="EN-US_TOPIC_0000001130275863"></a>
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+-   [Introduction](#section469617221261)
+-   [Constraints](#section12212842173518)
+-   [Repositories Involved](#section641143415335)
 
-#### Software Architecture
-Software architecture description
+## Introduction<a name="section469617221261"></a>
 
-#### Installation
+### BearPi Introduction
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+"BearPi" is an open source hardware platform, which is committed to the technology open source and promotion of new technology fields such as IOT, 5g, AI and OS; Its "BearPi open source community" focuses on providing free technical open source materials and tutorials for developers, serving millions of developers and hundreds of thousands of little bear fans.
 
-#### Instructions
+### Development board overview
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+BearPi[（BearPi-HM Nano）](https://item.taobao.com/item.htm?id=633296694816)is a development board specially built by BearPi school for openharmony system. It carries a highly integrated 2.4GHz WLAN SOC chip hi3861, and carries NFC circuit and standard E53 interface. The standard E53 interface can expand cases such as intelligent humidifier, intelligent desk lamp, intelligent security, intelligent smoke detector, etc
 
-#### Contribution
+### Development board function
+BearPi-HM Nano development board, for developers, is used for openharmony development and learning. At the same time, it provides rich cases and tutorials to realize full scene application design
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1. E53 interface: it is a standard interface with rich resources and easy to expand. It realizes multi application case expansion, making case development more flexible and convenient
+
+2. NFC: the on-board NFC RF circuit, combined with the key capabilities of openharmony, can perfectly realize the "touch and touch" networking mechanism and service pull-up function of openharmony system, reduce the complexity of user operation, and improve the user experience
+
+3. User keys: open function keys. The key functions are fully defined by the developer, which increases user operability
+
+## Constraints<a name="section12212842173518"></a>
+
+Currently,  BearPi-HM Nano \(Hi3861 V100\) are supported.
+
+## Repositories Involved<a name="section641143415335"></a>
 
 
-#### Gitee Feature
+device/bearpi/bearpi_hm_nano
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+**vendor/bearpi**
+
