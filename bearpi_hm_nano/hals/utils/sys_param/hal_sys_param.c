@@ -14,9 +14,9 @@
  */
 
 #include "hal_sys_param.h"
+#include <securec.h>
 
-static const char OHOS_DEVICE_TYPE[] = {"****"};
-static const char OHOS_DISPLAY_VERSION[] = {"OpenHarmony 1.0.1"};
+static const char OHOS_PRODUCT_TYPE[] = {"****"};
 static const char OHOS_MANUFACTURE[] = {"****"};
 static const char OHOS_BRAND[] = {"****"};
 static const char OHOS_MARKET_NAME[] = {"****"};
@@ -26,103 +26,175 @@ static const char OHOS_SOFTWARE_MODEL[] = {"****"};
 static const char OHOS_HARDWARE_MODEL[] = {"****"};
 static const char OHOS_HARDWARE_PROFILE[] = {"aout:true,display:true"};
 static const char OHOS_BOOTLOADER_VERSION[] = {"bootloader"};
+static const char OHOS_SECURITY_PATCH_TAG[] = {"2020-09-01"};
 static const char OHOS_ABI_LIST[] = {"****"};
 static const char OHOS_SERIAL[] = {"1234567890"};  // provided by OEM.
-static const int OHOS_FIRST_API_VERSION = 1;
 
-static const char EMPTY_STR[] = {""};
-
-const char* HalGetDeviceType(void)
+char* HalGetProductType(void)
 {
-    return OHOS_DEVICE_TYPE;
+    char* value = (char*)malloc(strlen(OHOS_PRODUCT_TYPE) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_TYPE) + 1, OHOS_PRODUCT_TYPE) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetManufacture(void)
+char* HalGetManufacture(void)
 {
-    return OHOS_MANUFACTURE;
+    char* value = (char*)malloc(strlen(OHOS_MANUFACTURE) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_MANUFACTURE) + 1, OHOS_MANUFACTURE) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetBrand(void)
+char* HalGetBrand(void)
 {
-    return OHOS_BRAND;
+    char* value = (char*)malloc(strlen(OHOS_BRAND) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_BRAND) + 1, OHOS_BRAND) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetMarketName(void)
+char* HalGetMarketName(void)
 {
-    return OHOS_MARKET_NAME;
+    char* value = (char*)malloc(strlen(OHOS_MARKET_NAME) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_MARKET_NAME) + 1, OHOS_MARKET_NAME) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetProductSeries(void)
+char* HalGetProductSeries(void)
 {
-    return OHOS_PRODUCT_SERIES;
+    char* value = (char*)malloc(strlen(OHOS_PRODUCT_SERIES) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_SERIES) + 1, OHOS_PRODUCT_SERIES) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetProductModel(void)
+char* HalGetProductModel(void)
 {
-    return OHOS_PRODUCT_MODEL;
+    char* value = (char*)malloc(strlen(OHOS_PRODUCT_MODEL) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_MODEL) + 1, OHOS_PRODUCT_MODEL) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetSoftwareModel(void)
+char* HalGetSoftwareModel(void)
 {
-    return OHOS_SOFTWARE_MODEL;
+    char* value = (char*)malloc(strlen(OHOS_SOFTWARE_MODEL) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_SOFTWARE_MODEL) + 1, OHOS_SOFTWARE_MODEL) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetHardwareModel(void)
+char* HalGetHardwareModel(void)
 {
-    return OHOS_HARDWARE_MODEL;
+    char* value = (char*)malloc(strlen(OHOS_HARDWARE_MODEL) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_HARDWARE_MODEL) + 1, OHOS_HARDWARE_MODEL) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetHardwareProfile(void)
+char* HalGetHardwareProfile(void)
 {
-    return OHOS_HARDWARE_PROFILE;
+    char* value = (char*)malloc(strlen(OHOS_HARDWARE_PROFILE) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_HARDWARE_PROFILE) + 1, OHOS_HARDWARE_PROFILE) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetSerial(void)
+char* HalGetSerial(void)
 {
-    return OHOS_SERIAL;
+    char* value = (char*)malloc(strlen(OHOS_SERIAL) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_SERIAL) + 1, OHOS_SERIAL) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetBootloaderVersion(void)
+char* HalGetBootloaderVersion(void)
 {
-    return OHOS_BOOTLOADER_VERSION;
+    char* value = (char*)malloc(strlen(OHOS_BOOTLOADER_VERSION) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_BOOTLOADER_VERSION) + 1, OHOS_BOOTLOADER_VERSION) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetAbiList(void)
+char* HalGetSecurityPatchTag(void)
 {
-    return OHOS_ABI_LIST;
+    char* value = (char*)malloc(strlen(OHOS_SECURITY_PATCH_TAG) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_SECURITY_PATCH_TAG) + 1, OHOS_SECURITY_PATCH_TAG) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
 
-const char* HalGetDisplayVersion(void)
+char* HalGetAbiList(void)
 {
-    return OHOS_DISPLAY_VERSION;
-}
-
-const char* HalGetIncrementalVersion(void)
-{
-    return INCREMENTAL_VERSION;
-}
-
-const char* HalGetBuildType(void)
-{
-    return BUILD_TYPE;
-}
-
-const char* HalGetBuildUser(void)
-{
-    return BUILD_USER;
-}
-
-const char* HalGetBuildHost(void)
-{
-    return BUILD_HOST;
-}
-
-const char* HalGetBuildTime(void)
-{
-    return BUILD_TIME;
-}
-
-int HalGetFirstApiVersion(void)
-{
-    return OHOS_FIRST_API_VERSION;
+    char* value = (char*)malloc(strlen(OHOS_ABI_LIST) + 1);
+    if (value == NULL) {
+        return NULL;
+    }
+    if (strcpy_s(value, strlen(OHOS_ABI_LIST) + 1, OHOS_ABI_LIST) != 0) {
+        free(value);
+        return NULL;
+    }
+    return value;
 }
