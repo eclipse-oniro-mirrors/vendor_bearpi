@@ -22,7 +22,9 @@
         "subsystem": "hiviewdfx",
         "components": [
           { "component": "hilog_lite", "features":[] },
-          { "component": "hievent_lite", "features":[] }
+          { "component": "hievent_lite", "features":[] },
+          { "component": "blackbox", "features":[] },
+          { "component": "hidumper_mini", "features":[] }
         ]
       },
       {
@@ -34,7 +36,17 @@
       {
         "subsystem": "security",
         "components": [
-          { "component": "hichainsdk", "features":[] }
+          { "component": "hichainsdk", "features":[] },
+          { "component": "huks", "features":
+            [
+              "disable_huks_binary = false",
+              "disable_authenticate = false",
+              "huks_use_lite_storage = true",
+              "huks_use_hardware_root_key = true",
+              "huks_config_file = \"hks_config_lite.h\"",
+              "huks_mbedtls_path = \"//device/bearpi/bearpi_hm_nano/sdk_liteos/third_party/mbedtls/include/\""
+            ]
+          }
         ]
       },
       {
@@ -48,6 +60,7 @@
         "subsystem": "communication",
         "components": [
           { "component": "wifi_lite", "features":[] },
+          { "component": "softbus_lite", "features":[] },
           { "component": "wifi_aware", "features":[]}
         ]
       },
