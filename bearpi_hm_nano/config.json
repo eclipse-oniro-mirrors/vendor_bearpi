@@ -7,12 +7,6 @@
     "kernel_version": "",
     "subsystems": [
       {
-        "subsystem": "applications",
-        "components": [
-          { "component": "bearpi_hm_nano_sample_app", "features":[] }
-        ]
-      },
-      {
         "subsystem": "iot_hardware",
         "components": [
           { "component": "iot_controller", "features":[] }
@@ -82,12 +76,6 @@
           { "component": "file", "features":[] },
           { "component": "kv_store", "features":[] },
           { "component": "os_dump", "features":[] }
-        ]
-      },
-      {
-        "subsystem": "vendor",
-        "components": [
-          { "component": "bearpi_hi3861_sdk", "target": "//device/bearpi/bearpi_hm_nano/sdk_liteos:wifiiot_sdk", "features":[] }
         ]
       },
       {
