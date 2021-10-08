@@ -7,12 +7,6 @@
     "kernel_version": "",
     "subsystems": [
       {
-        "subsystem": "applications",
-        "components": [
-          { "component": "bearpi_hm_nano_sample_app", "features":[] }
-        ]
-      },
-      {
         "subsystem": "iot_hardware",
         "components": [
           { "component": "iot_controller", "features":[] }
@@ -37,6 +31,7 @@
         "subsystem": "security",
         "components": [
           { "component": "hichainsdk", "features":[] },
+          { "component": "deviceauth_lite", "features":[] },
           { "component": "huks", "features":
             [
               "disable_huks_binary = false",
@@ -60,7 +55,7 @@
         "subsystem": "communication",
         "components": [
           { "component": "wifi_lite", "features":[] },
-          { "component": "softbus_lite", "features":[] },
+          { "component": "dsoftbus", "features":[] },
           { "component": "wifi_aware", "features":[]}
         ]
       },
@@ -82,12 +77,6 @@
           { "component": "file", "features":[] },
           { "component": "kv_store", "features":[] },
           { "component": "os_dump", "features":[] }
-        ]
-      },
-      {
-        "subsystem": "vendor",
-        "components": [
-          { "component": "bearpi_hi3861_sdk", "target": "//device/bearpi/bearpi_hm_nano/sdk_liteos:wifiiot_sdk", "features":[] }
         ]
       },
       {
