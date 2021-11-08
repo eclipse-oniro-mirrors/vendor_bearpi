@@ -4,6 +4,7 @@
     "device_company": "bearpi",
     "board": "bearpi_hm_nano",
     "kernel_type": "liteos_m",
+    "kernel_is_prebuilt": true,
     "kernel_version": "",
     "subsystems": [
       {
