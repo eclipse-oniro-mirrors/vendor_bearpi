@@ -1,0 +1,10 @@
+{
+  "parts": {
+    "product_bearpi_hm_nano": {
+      "module_list": [
+        "//vendor/bearpi/bearpi_hm_nano:bearpi_hm_nano"
+      ]
+    }
+  },
+  "subsystem": "product_bearpi_hm_nano"
+}
