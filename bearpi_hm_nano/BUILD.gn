@@ -12,8 +12,5 @@
 # limitations under the License.
 
 group("bearpi_hm_nano") {
-  deps = [
-    "//device/bearpi/bearpi_hm_nano/sdk_liteos:wifiiot_sdk",
-  ]
+  deps = [ "//device/bearpi/bearpi_hm_nano/sdk_liteos:wifiiot_sdk" ]
 }
-
