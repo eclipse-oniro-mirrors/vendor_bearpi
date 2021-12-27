@@ -13,7 +13,8 @@
 ### 开发板概述
 
 小熊派[（BearPi-HM Nano）](https://item.taobao.com/item.htm?id=633296694816)是一款由小熊派专为OpenHarmony系统打造的开发板,板载高度集成的2.4GHz WLAN SoC芯片Hi3861，并板载NFC电路及标准的E53接口，标准的E53接口可扩展智能加湿器、智能台灯、智能安防、智能烟感等案例
-
+### 开发指导
+参考[开发指导](https://gitee.com/laowang-bearpi/device_bearpi_bearpi_hm_nano/tree/master/docs)
 ### 开发板功能
 BearPi-HM Nano开发板，面向开发者，用于OpenHarmony开发学习，同时提供丰富案例和教程，实现全场景应用设计
 
